@@ -117,6 +117,8 @@ local message_formats = {
 
       return template:format(function_descr)
    end,
+   ["901"] = "too many blank lines in a row",
+
 }
 
 local function get_message_format(warning)

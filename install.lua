@@ -112,6 +112,7 @@ for _, filename in ipairs({
       "detect_bad_whitespace.lua",
       "detect_cyclomatic_complexity.lua",
       "detect_globals.lua",
+      "detect_too_many_whitelines.lua",
       "detect_uninit_access.lua",
       "detect_unreachable_code.lua",
       "detect_unused_locals.lua",

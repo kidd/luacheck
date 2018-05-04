@@ -28,6 +28,7 @@ build = {
       ["luacheck.detect_bad_whitespace"] = "src/luacheck/detect_bad_whitespace.lua",
       ["luacheck.detect_cyclomatic_complexity"] = "src/luacheck/detect_cyclomatic_complexity.lua",
       ["luacheck.detect_globals"] = "src/luacheck/detect_globals.lua",
+      ["luacheck.detect_too_many_whitelines"] = "src/luacheck/detect_too_many_whitelines.lua",
       ["luacheck.detect_uninit_access"] = "src/luacheck/detect_uninit_access.lua",
       ["luacheck.detect_unreachable_code"] = "src/luacheck/detect_unreachable_code.lua",
       ["luacheck.detect_unused_locals"] = "src/luacheck/detect_unused_locals.lua",

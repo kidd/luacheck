@@ -1,4 +1,5 @@
 local detect_bad_whitespace = require "luacheck.detect_bad_whitespace"
+local detect_too_many_whitelines = require "luacheck.detect_too_many_whitelines"
 local detect_cyclomatic_complexity = require "luacheck.detect_cyclomatic_complexity"
 local detect_globals = require "luacheck.detect_globals"
 local detect_uninit_access = require "luacheck.detect_uninit_access"
@@ -52,6 +53,7 @@ local function check_or_throw(src)
    detect_unreachable_code(chstate)
    detect_unused_locals(chstate)
    detect_unused_rec_funcs(chstate)
+   detect_too_many_whitelines(chstate)
 
    local events, per_line_options = inline_options.get_events(chstate)
 

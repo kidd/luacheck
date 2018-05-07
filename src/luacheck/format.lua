@@ -118,6 +118,7 @@ local message_formats = {
       return template:format(function_descr)
    end,
    ["901"] = "too many blank lines in a row",
+   ["902"] = "Error checking should NOT be in own paragraph",
 
 }
 

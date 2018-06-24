@@ -118,6 +118,7 @@ for _, filename in ipairs({
       "detect_unreachable_code.lua",
       "detect_unused_locals.lua",
       "detect_unused_rec_funcs.lua",
+      "detect_no_empty_line_before_return",
       "expand_rockspec.lua",
       "filter.lua",
       "format.lua",

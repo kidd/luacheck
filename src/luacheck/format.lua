@@ -119,6 +119,7 @@ local message_formats = {
    end,
    ["901"] = "too many blank lines in a row",
    ["902"] = "Error checking should NOT be in own paragraph",
+   ["904"] = "No empty line before return",
 
 }
 

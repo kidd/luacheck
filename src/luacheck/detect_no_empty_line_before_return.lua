@@ -23,7 +23,7 @@ end
 
 
 local function sanitize(line)
-  return line:gsub("--.*", "")
+  return line:gsub("%-%-.*", "")
 end
 
 

@@ -22,10 +22,16 @@ local function is_allowed_line(line)
 end
 
 
+local function sanitize(line)
+  return line:gsub("--.*", "")
+end
+
+
 local function detect_no_empty_line_before_return(chstate)
   local openning_paragraph = true
   local buffer = {}
   for line_number, line in ipairs(chstate.source_lines) do
+    line = sanitize(line)
     buffer[1], buffer[2], buffer[3], buffer[4] = line, buffer[1], buffer[2], nil
     if is_return_line(buffer[1]) and
       not is_white_line(buffer[2]) and

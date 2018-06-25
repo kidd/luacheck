@@ -11,7 +11,7 @@ end
 
 
 local function is_allowed_line(line)
-  local allowed_patterns = {"function", "if", "else", "elsif"}
+  local allowed_patterns = {"function", "if", "else", "elsif", "log", "then"}
   for i, v in ipairs(allowed_patterns) do
     if line:find(v) then
       return true

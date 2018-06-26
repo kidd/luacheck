@@ -1,7 +1,7 @@
 local CODE = "904"
 
 local function is_white_line(line)
-  return line:find("^$")
+  return line:find("^ *$")
 end
 
 
@@ -23,7 +23,7 @@ end
 
 
 local function sanitize(line)
-  return line:gsub("%-%-.*", "")
+  return line:gsub("%-%-.*$", "")
 end
 
 
